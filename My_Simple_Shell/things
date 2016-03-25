@@ -1,0 +1,8 @@
+char buff[500] = {"\0"};
+               int spot2 = checkArgsContents("\"", (*argv)+spot) + spot;
+                int i = spot;
+                while(i < spot2){
+                    strcat(buff, (*argv)[spot]);
+                    i++;
+                }
+            modAlias(aliasList, (*argv)[spot], 0);

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="CPP_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/string_edit/string_edit.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/string_edit/string_edit.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/alias/alias.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/alias/alias.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/shell/shell.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/shell/shell.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/linkedlist/requiredIncludes.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/linkedlist/genericData.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/linkedlist/listUtils.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/linkedlist/linkedList.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/linkedlist/linkedList.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/linkedlist/listUtils.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/cscd340hw8.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/utils/myUtils.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/utils/myUtils.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/tokenize/makeArgs.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/tokenize/makeArgs.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/CMakeLists.txt" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/pipes/pipes.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/pipes/pipes.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/history/history.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/history/history.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/process/process.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/process/process.h" isTestSource="false" />
+    </content>
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library">
+      <library name="Header Search Paths">
+        <CLASSES>
+          <root url="file:///usr/include" />
+          <root url="file:///usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed" />
+          <root url="file:///usr/lib/gcc/x86_64-linux-gnu/4.8/include" />
+          <root url="file:///usr/local/include" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file:///usr/include" />
+          <root url="file:///usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed" />
+          <root url="file:///usr/lib/gcc/x86_64-linux-gnu/4.8/include" />
+          <root url="file:///usr/local/include" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+  </component>
+</module>

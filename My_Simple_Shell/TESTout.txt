@@ -1,0 +1,17 @@
+alias
+CMakeLists.txt
+CMAKE PREVIOUS BUILD PATH
+cscd340_w16_hw8.pdf
+Debug
+history
+linkedlist
+main.c
+Makefile
+Makefile (copy)
+mssh
+pipes
+process
+shell
+TESTout.txt
+tokenize
+utils
