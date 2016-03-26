@@ -23,7 +23,7 @@ alias.o:	./alias/alias.c ./alias/alias.h
 
 shell.o:	./shell/shell.c ./shell/shell.h
 	gcc -g -c ./shell/shell.c
-clean:
+cleanArgs:
 	rm ./*/*.o	
 	rm mssh
 

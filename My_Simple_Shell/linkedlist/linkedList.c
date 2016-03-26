@@ -56,8 +56,8 @@ void removeItem(LinkedList * theList, Node * nn, void (*removeData)(void *), int
 	if(curr != NULL){
 		curr->prev->next = curr->next;
 		
-			if(curr->next != NULL)
-				curr->next->prev = curr->prev;
+		if(curr->next != NULL)
+			curr->next->prev = curr->prev;
 				
 		curr->prev = NULL;
 		removeData(curr->data);

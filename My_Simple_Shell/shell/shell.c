@@ -25,7 +25,7 @@ FILE *openShellFiles(int *success, int mode, char *filename) {
 
 }
 
-void sillyInit(LinkedList **aliasList, LinkedList **histList, char **pathVarName) {
+void shellInit(LinkedList **aliasList, LinkedList **histList, char **pathVarName) {
     int rcsuccess = 0;
     int histsuccess = 0;
     FILE * rcFile = openShellFiles(&rcsuccess, 0, ".msshrc");
@@ -186,7 +186,7 @@ void changeDirect(char * path){
         printf("cd failed. Error: %s", strerror(errno));
     }
     setenv("PWD",path, 1);
-    clean(argc,argv);
+    cleanArgs(argc, argv);
 
 
 }
@@ -229,7 +229,7 @@ void writeToHistFile(LinkedList *histList, char *histLocale) {
 }
 
 void parseInput(LinkedList ** aliasList, LinkedList ** histlist, char *** argv){
-    int spot = -1;
+    int spot;
         if( *aliasList != NULL){
             spot = checkArgs("alias", *argv);
             if(spot != -1 && (*argv)[spot+1] != NULL)
@@ -285,16 +285,16 @@ void histReRun(LinkedList **histlist, char *trigger, LinkedList *aliasList) {
             prePipe = parsePrePipe(retCommand, &preCount);
             postPipe = parsePostPipe(retCommand, &postCount);
             pipeIt(prePipe, postPipe, *histlist, NULL);
-            clean(preCount, prePipe);
-            clean(postCount, postPipe);
+            cleanArgs(preCount, prePipe);
+            cleanArgs(postCount, postPipe);
         }// end if pipeCount
 
         else {
             argc = makeargs(retCommand, &argv);
             parseInput(&aliasList, histlist, &argv);
             if (argc != -1)
-                forkIt(argv, *histlist, aliasList);
-            clean(argc, argv);
+                forkProcess(argv, *histlist, aliasList);
+            cleanArgs(argc, argv);
             argv = NULL;
         }
     }

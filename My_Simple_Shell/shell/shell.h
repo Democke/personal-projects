@@ -17,7 +17,7 @@
 #include "../tokenize/makeArgs.h"
 
 FILE *openShellFiles(int *success, int mode, char *filename);
-void sillyInit(LinkedList **aliasList, LinkedList **histList, char **pathVarName);
+void shellInit(LinkedList **aliasList, LinkedList **histList, char **pathVarName);
 void initFromRCFile(FILE * rcFile, LinkedList **aliasList, LinkedList **histList, char **pathVarName);
 char * parsePath(char * line);
 char * assignPath(char * s);

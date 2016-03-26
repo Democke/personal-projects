@@ -10,7 +10,7 @@
 #define MAX 100
 
 
-void clean(int argc, char **argv);
+void cleanArgs(int argc, char **argv);
 void printargs(int argc, char **argv);
 int makeargs(char *s, char *** argv);
 

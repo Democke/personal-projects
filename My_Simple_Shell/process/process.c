@@ -1,6 +1,6 @@
 #include "process.h"
 
-/*void forkIt(char ** argv){
+/*void forkProcess(char ** argv){
 	int  status = 0;
 	pid_t pid = fork();
 
@@ -16,7 +16,7 @@
 	}
  
 }*/
-void forkIt(char **argv, LinkedList *histList, LinkedList *aliasList) {
+void forkProcess(char **argv, LinkedList *histList, LinkedList *aliasList) {
 	int  status = 0;
 	pid_t pid = fork();
 

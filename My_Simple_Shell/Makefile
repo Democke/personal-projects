@@ -1,7 +1,7 @@
 CC=gcc
 
-lab5:	cscd340hw8.c ./tokenize/makeArgs.o ./utils/myUtils.o ./process/process.o ./pipes/pipes.o ./history/history.o ./alias/alias.o ./shell/shell.o ./linkedlist/listUtils.c
-	gcc -g cscd340hw8.c ./tokenize/makeArgs.o ./utils/myUtils.o ./process/process.o ./pipes/pipes.o ./history/history.o ./alias/alias.o ./shell/shell.o  ./linkedlist/listUtils.c ./linkedlist/linkedList.c -o mssh
+lab5:	msshmain.c ./tokenize/makeArgs.o ./utils/myUtils.o ./process/process.o ./pipes/pipes.o ./history/history.o ./alias/alias.o ./shell/shell.o ./linkedlist/listUtils.c
+	gcc -g msshmain.c ./tokenize/makeArgs.o ./utils/myUtils.o ./process/process.o ./pipes/pipes.o ./history/history.o ./alias/alias.o ./shell/shell.o  ./linkedlist/listUtils.c ./linkedlist/linkedList.c -o mssh
 
 makeArgs.o:	./tokenize/makeArgs.c ./tokenize/makeArgs.h
 	gcc -g -c ./tokenize/makeArgs.c
@@ -23,7 +23,7 @@ alias.o:	./alias/alias.c ./alias/alias.h
 
 shell.o:	./shell/shell.c ./shell/shell.h
 	gcc -g -c ./shell/shell.c
-clean:
+cleanArgs:
 	rm ./*/*.o	
 	rm mssh
 

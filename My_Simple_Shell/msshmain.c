@@ -18,7 +18,7 @@ int main()
     char * pathVarName;
     history *temp = NULL;
 
-    sillyInit(&aliasList, &histlist, &pathVarName);
+    shellInit(&aliasList, &histlist, &pathVarName);
 
 
     printf("command?: ");
@@ -48,8 +48,8 @@ int main()
             parseInput(&aliasList, &histlist, &prePipe);
             parseInput(&aliasList, &histlist, &prePipe);
             pipeIt(prePipe, postPipe, histlist, aliasList);
-            clean(preCount, prePipe);
-            clean(postCount, postPipe);
+            cleanArgs(preCount, prePipe);
+            cleanArgs(postCount, postPipe);
         }// end if pipeCount
 
         else
@@ -58,9 +58,9 @@ int main()
             parseInput(&aliasList, &histlist, &argv);
 
             if(argc != -1)
-                forkIt(argv, histlist, aliasList);
+                forkProcess(argv, histlist, aliasList);
                 //checkForRedirect(argv, histlist, aliasList);
-            clean(argc, argv);
+            cleanArgs(argc, argv);
             argv = NULL;
         }
 

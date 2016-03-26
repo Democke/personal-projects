@@ -1,6 +1,6 @@
 #include "makeArgs.h"
 //Kyle Hermens
-void clean(int argc, char **argv)
+void cleanArgs(int argc, char **argv)
 {
 	if(argc < 0)
 		return;
@@ -15,7 +15,7 @@ void clean(int argc, char **argv)
 
 
 
-}// end clean
+}// end cleanArgs
 
 void printargs(int argc, char **argv)
 {

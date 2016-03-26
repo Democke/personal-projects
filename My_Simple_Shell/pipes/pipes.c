@@ -212,7 +212,7 @@ int checkForRedirect(char **argv, LinkedList *histList, LinkedList *aliasList) {
          }
         else{
             execvp(altArgv[0], altArgv);
-            clean(i, altArgv);
+            cleanArgs(i, altArgv);
             return -1;
         }
 }

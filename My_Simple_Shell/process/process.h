@@ -8,6 +8,6 @@
 #include <sys/wait.h>
 #include <sys/types.h>
 #include "../pipes/pipes.h"
-void forkIt(char **argv, LinkedList *histList, LinkedList *aliasList);
+void forkProcess(char **argv, LinkedList *histList, LinkedList *aliasList);
 
 #endif
