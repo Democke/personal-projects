@@ -9,7 +9,7 @@ The shell maintains a history file, msshrc_history, and will also initialize the
 
   Environment variables:
   
-      HISTCOUNT- the number of history entries that will be printed to the screen
+      HISTCOUNT- the number of history entries that will be printed to the screen when the command is run.
       
       HISTFILECOUNT- the number of history entries that will be written to the shell's history file on close.
     
@@ -20,4 +20,4 @@ The shell maintains a history file, msshrc_history, and will also initialize the
 'alias' prints out a list of the current aliases.
   'unalias' with an alias will remove that alias.
   
-  The shell also recognizes &0 and &1 as shorcuts for standard out.
+  The shell also recognizes &0 and &1 as shorcuts for stdin and stdout.
